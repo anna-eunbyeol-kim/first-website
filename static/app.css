@@ -1,0 +1,192 @@
+:root {
+	--primary: #41a7fa;
+	--primary-hl: #6abcff;
+	--primary-o: #6abcff77;
+	--accent: #76c8e0;
+	--secondary: #60dfcd;
+	--error: #c20707;
+	--error-soft: #de7575;
+	--card: #e2f2ff;
+	--bg: #f8f9fa;
+	--text: #000000;
+	--canvas: #e6e4ef;
+	--small-radius: 12px;
+	--button-padding: 10px 16px;
+	--short-transition: 0.3s;
+	--default-padding: 24px;
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+	letter-spacing: 0.6px;
+}
+
+* {
+	font-family: Roboto !important;
+}
+
+img {
+	width: 100%;
+}
+
+.button {
+	cursor: pointer;
+	user-select: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: var(--button-padding);
+	transition: var(--short-transition);
+	background-color: var(--primary);
+	color: var(--bg);
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 20%);
+}
+
+.button:hover {
+	box-shadow: 0 8px 10px 0 rgb(0, 0, 0, 30%);
+}
+
+.color.primary {
+	background-color: var(--primary);
+	color: var(--bg);
+}
+.text.primary {
+	color: var(--primary);
+}
+
+.button.color.primary:hover {
+	color: var(--text);
+	background-color: var(--primary-hl);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
