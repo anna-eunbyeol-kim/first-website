@@ -20,7 +20,7 @@ const config = {
 		},
 		trailingSlash: "always",
 		paths: {
-			base: dev ? "" : "/haja-web"
+			base: "/first-website"
 		}
 	}
 }
