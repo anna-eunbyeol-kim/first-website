@@ -1,0 +1,1 @@
+import{default as e}from"../components/pages/(examples)/parrallax/_page.svelte-2fb839d6.js";import"./index-d2cefc3a.js";import"./index-29e3c696.js";import"./index-e83ab04c.js";import"./paths-ae0b3329.js";export{e as component};
