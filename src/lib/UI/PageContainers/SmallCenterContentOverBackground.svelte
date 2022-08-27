@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Logo from '$lib/UI/Branding/Logo.svelte';
+	import Logo from "$lib/UI/Branding/Logo.svelte"
 </script>
 
 <div class="container">
 	<div class="logo">
-		<Logo url={'/logo/logo_horizontal_white.png'} height={200} />
+		<Logo url={"/logo/logo_horizontal_white.png"} height={200} />
 	</div>
 
 	<slot />

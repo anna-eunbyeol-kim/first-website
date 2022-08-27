@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let url: string = '/logo/logo_horizontal_full.png';
+	export let url: string = "/logo/logo_horizontal_full.png"
 
-	export let width = 200;
-	export let height = 150;
+	export let width = 200
+	export let height = 150
 </script>
 
 {#if url}

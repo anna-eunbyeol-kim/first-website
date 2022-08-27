@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { base } from "$app/paths"
 
-	import BackButton from '$lib/UI/BackButton.svelte';
+	import BackButton from "$lib/UI/BackButton.svelte"
 
-	export let backBtn: boolean = true;
-	export let logoLink: string = '/';
+	export let backBtn: boolean = true
+	export let logoLink: string = "/"
 
-	const logo = `${base}/logo/logo_horizontal_full.png`;
+	const logo = `${base}/logo/logo_horizontal_full.png`
 </script>
 
 <div class="flex">

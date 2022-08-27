@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { Datepicker } from "svelte-calendar"
 
 	const theme = {

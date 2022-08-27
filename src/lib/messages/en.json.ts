@@ -1,0 +1,46 @@
+export const en = {
+	navbar: {
+		Home: "Home",
+		Products: "Products",
+		"My Skills": "My Skills",
+		"Contact Me": "Contact Me",
+		config: "Configuration"
+	},
+	landing: {
+		titulo: "Hi, I'm Anna Kim",
+		subtitulo: "I'm an amateur front-end web developer and digital design student",
+		"call-to-action": "MY PROJECTS",
+		"call-to-action-secondary": "MESSAGE ME"
+	},
+	home: {
+		titulo: "My Projects",
+		subtitulo: "Swipe!",
+		"call-to-action-secondary": "READ MORE",
+		"call-to-action": "SEE LIVE",
+		disabled: "COMING SOON!",
+		contact: "LET'S TALK ABOUT THIS"
+	},
+	strategy: {
+		titulo: "Products & Services",
+		subtitulo: "Find out which architecture best suits your needs or",
+		boton: "consult me"
+	},
+	skills: {
+		titulo: "My Skills",
+		subtitulo: "Click on them to learn more!"
+	},
+	"contact-me": {
+		titulo: "Contact Me",
+		subtitulo: "Send me a message here or email me at ",
+		nombre: "Your name",
+		email: "Your email",
+		mensaje: "Your message here...",
+		titulo_redes: "Also find me at...",
+		enviar: "SUBMIT",
+		mensajes: {
+			mandando: "Sending your message...",
+			exito: "Your message was sent successfully",
+			error: "Looks like your device is offline"
+		}
+	}
+}

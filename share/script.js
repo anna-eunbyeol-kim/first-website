@@ -1,3 +1,3 @@
-document.getElementById('btn').onclick = () => {
-  alert('hello :)')
+document.getElementById("btn").onclick = () => {
+	alert("hello :)")
 }

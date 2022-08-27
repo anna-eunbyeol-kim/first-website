@@ -1,53 +1,53 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import DataInput from './DataInput.svelte';
+	import { base } from "$app/paths"
+	import DataInput from "./DataInput.svelte"
 
 	export let inputs = [
 		{
-			text: 'Email',
-			id: 'email_reset',
-			type: 'email',
-			icon: '/icon/person.svg'
+			text: "Email",
+			id: "email_reset",
+			type: "email",
+			icon: "/icon/person.svg"
 		}
-	];
+	]
 
-	export let error: string = '';
-	export let callback: (form) => Promise<string | null> = async (form) => '';
+	export let error: string = ""
+	export let callback: (form) => Promise<string | null> = async (form) => ""
 
-	let formElement;
+	let formElement
 
-	$: requestSent = false;
-	$: attempted = false;
+	$: requestSent = false
+	$: attempted = false
 
 	const sendRequest = async () => {
-		attempted = true;
-		error = validateForm();
+		attempted = true
+		error = validateForm()
 
-		if (error != '') {
-			return false;
+		if (error != "") {
+			return false
 		}
 
-		requestSent = true;
-		error = (await callback(formElement)) ?? '';
-	};
+		requestSent = true
+		error = (await callback(formElement)) ?? ""
+	}
 
 	const validateForm = (): string => {
-		error = null;
-		let password;
+		error = null
+		let password
 
 		for (let index in inputs) {
-			const input = inputs[index];
-			const value = formElement[input.id].value;
+			const input = inputs[index]
+			const value = formElement[input.id].value
 
-			if (input.type == 'password') {
-				password = value;
-			} else if (input.id == 'pass_confirm' && value != password) {
-				return "Passwords don't match";
+			if (input.type == "password") {
+				password = value
+			} else if (input.id == "pass_confirm" && value != password) {
+				return "Passwords don't match"
 			}
 		}
 
-		return '';
-	};
+		return ""
+	}
 </script>
 
 <section>
@@ -56,7 +56,7 @@
 			<slot name="title">Reset Password</slot>
 		</h1>
 
-		{#if error !== ''}
+		{#if error !== ""}
 			<div class="error">
 				{error}
 			</div>

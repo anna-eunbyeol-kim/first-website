@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { page } from "$app/stores"
 	import Casing from "$lib/UI/PageContainers/Casing.svelte"
 	import FallbackImage from "$lib/UI/Widgets/FallbackImage.svelte"

@@ -16,15 +16,7 @@
 	{#if icon != ""}
 		<div class="input-icon icon-username" style={iconHref} />
 	{/if}
-	<input
-		class:push={icon != ""}
-		class:attempted
-		{id}
-		{name}
-		placeholder={text}
-		{type}
-		{required}
-	/>
+	<input class:push={icon != ""} class:attempted {id} {name} placeholder={text} {type} {required} />
 </div>
 
 <style>

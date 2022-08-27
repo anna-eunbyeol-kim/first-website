@@ -1,25 +1,25 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import Logo from '$lib/UI/Branding/Logo.svelte';
+	import { base } from "$app/paths"
+	import Logo from "$lib/UI/Branding/Logo.svelte"
 
 	const icons = {
-		calendar: '/icon/calendar.svg',
-		events: '/icon/events.svg',
-		girlParty: '/girl-icon/party.svg',
-		halloween: '/icon/halloween.svg',
-		heart: '/icon/heart.svg',
-		hospital: '/icon/hospital.svg',
-		toronto: '/icon/toronto.svg',
-		welcome: '/icon/welcome.svg'
-	};
+		calendar: "/icon/calendar.svg",
+		events: "/icon/events.svg",
+		girlParty: "/girl-icon/party.svg",
+		halloween: "/icon/halloween.svg",
+		heart: "/icon/heart.svg",
+		hospital: "/icon/hospital.svg",
+		toronto: "/icon/toronto.svg",
+		welcome: "/icon/welcome.svg"
+	}
 
-	export let icon: keyof typeof icons = 'events';
+	export let icon: keyof typeof icons = "events"
 </script>
 
 <div class="container">
 	<div class="left">
 		<div class="logo">
-			<Logo url={'/logo/logo_horizontal_white.png'} height={200} />
+			<Logo url={"/logo/logo_horizontal_white.png"} height={200} />
 		</div>
 		<div class="bottom-logo">
 			<img src="{base}/icon/blob.svg" alt="white background" />
@@ -29,7 +29,7 @@
 
 	<div class="right">
 		<div class="logo small">
-			<Logo url={'/logo/logo_horizontal_full.png'} height={100} />
+			<Logo url={"/logo/logo_horizontal_full.png"} height={100} />
 		</div>
 		<slot />
 		<img src={base + icons[icon]} alt="logo-icon" />

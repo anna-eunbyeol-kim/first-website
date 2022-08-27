@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { base } from "$app/paths"
 
 	const colors = [
@@ -63,4 +63,6 @@
 		font-size: 4rem;
 		text-transform: uppercase;
 	}
-</style>
+</style> -->
+
+nothing
