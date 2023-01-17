@@ -5,23 +5,13 @@ import preprocess from "svelte-preprocess"
 const config = {
 	preprocess: preprocess(),
 	kit: {
-		methodOverride: {
-			allowed: ["POST", "PUT", "DELETE"]
-		},
 		adapter: adapter({
 			pages: "docs",
 			assets: "docs",
 			hostineSite: "data",
 			precompress: false,
 			fallback: "index.html"
-		}),
-		prerender: {
-			default: true
-		},
-		trailingSlash: "always",
-		paths: {
-			base: "/first-website"
-		}
+		})
 	}
 }
 

@@ -1,1 +1,0 @@
-import{default as a}from"../components/pages/portfolio/contact/_page.svelte-b8ec9611.js";import"./index-d2cefc3a.js";import"./Contact-3da7be8e.js";import"./paths-ae0b3329.js";import"./runtime.esm-647531b9.js";import"./index-29e3c696.js";export{a as component};

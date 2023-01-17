@@ -36,30 +36,26 @@
 			content="https://haja-data.herokuapp.com/haja/logo_horizontal_full.png"
 		/> -->
 
-		<link rel="icon" href="/first-website/favicon.png" />
+		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/first-website/_app/immutable/start-a8c0bb2f.js">
-	<link rel="modulepreload" href="/first-website/_app/immutable/chunks/index-d2cefc3a.js">
-	<link rel="modulepreload" href="/first-website/_app/immutable/chunks/singletons-eebfa391.js">
-	<link rel="modulepreload" href="/first-website/_app/immutable/chunks/index-29e3c696.js">
-	<link rel="modulepreload" href="/first-website/_app/immutable/chunks/paths-ae0b3329.js">
+		<link rel="modulepreload" href="/_app/immutable/start-9e1ed430.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-5d8d6c9a.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-9590f5b6.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-6cfd5274.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/paths-b4419565.js">
 	</head>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-		import { set_public_env, start } from "/first-website/_app/immutable/start-a8c0bb2f.js";
+			import { start } from "/_app/immutable/start-9e1ed430.js";
 
-		set_public_env({});
-
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-			paths: {"base":"/first-website","assets":"/first-website"},
-			route: true,
-			spa: true,
-			trailing_slash: "always",
-			hydrate: null
-		});
-	</script></div>
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				version: "1673968961530"
+			});
+		</script></div>
 	</body>
 </html>
