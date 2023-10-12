@@ -39,23 +39,27 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/_app/immutable/start-9e1ed430.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index-5d8d6c9a.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-9590f5b6.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index-6cfd5274.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/paths-b4419565.js">
+	<link rel="modulepreload" href="/_app/immutable/start-d9fe4ee7.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-9a40c2ee.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-e24c4d9a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-899fab12.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/paths-6cd3a76e.js">
 	</head>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/_app/immutable/start-9e1ed430.js";
+		import { set_public_env, start } from "/_app/immutable/start-d9fe4ee7.js";
 
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				version: "1673968961530"
-			});
-		</script></div>
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+			paths: {"base":"","assets":""},
+			route: true,
+			spa: true,
+			trailing_slash: "never",
+			hydrate: null
+		});
+	</script></div>
 	</body>
 </html>
