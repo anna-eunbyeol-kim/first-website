@@ -38,28 +38,32 @@
 
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/immutable/start-be7d29de.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-9a40c2ee.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-f21ff57d.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-899fab12.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/paths-6cd3a76e.js">
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.c62dfb0d.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.e108d1fd.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.5dc4e68b.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.07e2a013.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.79a65843.js">
 	</head>
 	<body>
 		<div>
-		<script type="module" data-sveltekit-hydrate="45h">
-		import { set_public_env, start } from "/_app/immutable/start-be7d29de.js";
+			<script>
+				{
+					__sveltekit_1i4ae3 = {
+						base: "",
+						env: {}
+					};
 
-		set_public_env({});
+					const element = document.currentScript.parentElement;
 
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-			paths: {"base":"","assets":""},
-			route: true,
-			spa: true,
-			trailing_slash: "never",
-			hydrate: null
-		});
-	</script></div>
+					Promise.all([
+						import("/_app/immutable/entry/start.c62dfb0d.js"),
+						import("/_app/immutable/entry/app.07e2a013.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
