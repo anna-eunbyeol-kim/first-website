@@ -6,8 +6,8 @@ const config = {
 	preprocess: preprocess(),
 	kit: {
 		adapter: adapter({
-			pages: "docs",
-			assets: "docs",
+			pages: "build",
+			assets: "build",
 			hostineSite: "data",
 			precompress: false,
 			fallback: "index.html"
