@@ -11,7 +11,10 @@ const config = {
 			hostineSite: "data",
 			precompress: false,
 			fallback: "index.html"
-		})
+		}),
+		paths: {
+			base: "/first-website"
+		}
 	}
 }
 
