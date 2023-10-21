@@ -1,1 +1,0 @@
-import{default as a}from"../components/pages/portfolio/strategy/_page.svelte-7fc416e6.js";import"./index-9a40c2ee.js";import"./Strategy-cc353c9c.js";import"./runtime.esm-8e8a21b0.js";import"./index-899fab12.js";import"./stores-9294397b.js";export{a as component};
